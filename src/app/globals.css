@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-50: #FFF8F0;
+  --color-warm-100: #FFEDD5;
+  --color-warm-200: #FED7AA;
+  --color-warm-300: #FDBA74;
+  --color-warm-400: #FB923C;
+  --color-warm-500: #F97316;
+  --color-warm-600: #EA580C;
+  --color-warm-700: #C2410C;
+  --color-warm-800: #9A3412;
+  --color-warm-900: #7C2D12;
+  --color-kid-50: #FFF7ED;
+  --color-kid-100: #FFEDD5;
+  --color-kid-200: #FDE68A;
+  --color-kid-300: #FCD34D;
+  --color-kid-400: #FBBF24;
+  --color-kid-500: #F59E0B;
+  --color-kid-pink: #F472B6;
+  --color-kid-purple: #A78BFA;
+  --color-kid-green: #34D399;
+  --color-kid-blue: #60A5FA;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Vazirmatn', system-ui, sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
